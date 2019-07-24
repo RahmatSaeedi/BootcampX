@@ -31,7 +31,25 @@ A set of database queries for a [Light House Labs](https://github.com/lighthouse
   - `end_date`: The cohorts' end date
 
 * _`assignments`_
+  ```bash
+
+  ```
+  - `id`: A unique identifier
+  - `name`: The name of the assignment
+  - `content`: The written content body of the assignment
+  - `day`: The day that the assignment appears on
+  - `chapter`: The order that the assignment will appear in the day.
+  - `duration`: The average time it takes a student to finish
+
 * _`assignment_submissions`_
+  ```bash
+  ```
+  - `id`: A unique identifier
+  - `assignment_id`: The id of the assignment
+  - `student_id`: The id of the student
+  - `duration`: The time it took the student to complete the assignment
+  - `submission_date`: The date is was submitted
+
 * _`teachers`_
 * _`assistance_requests`_
 
@@ -124,6 +142,20 @@ Gets the `name`, `id`, and `cohort_id` of all of the students currently enrolled
  ```
 
 
+### [students_without_github.sql](queries/students_without_github.sql)
+Gets the `name`, `email`, and `phone` number of all _graduates_ without a linked Github account.
+
+```bash
+       name        |             email             |    phone
+-------------------+-------------------------------+--------------
+ Herminia Smitham  | sawayn.sarina@yahoo.com       | 778-251-5094
+ Jacinthe Kautzer  | litzy_fay@hilpert.net         | 075-883-5570
+ Bernardo Turcotte | margarita.anderson@paolo.name | 814-473-6929
+ Eloisa Quigley    | schmidt.ansel@gmail.com       | 276-965-2022
+ Tiana Altenwerth  | zelda.stanton@yahoo.com       | 448-872-0954
+ Hailie Kutch      | zora.corkery@goldner.net      | 249-763-9998
+(6 rows)
+```
 
 # pSQL
 - `\c ...`: select a table
