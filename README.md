@@ -96,6 +96,17 @@ Gets the `name`, `id`, and `cohort_id` of all of the students that don't have an
  Bertha Johnson   | 172 |        11
  ...
 ```
+### [students_without_gmail_or_phone.sql](queries/students_without_gmail_or_phone.sql)
+Gets the `name`, `email`, `id`, and `cohort_id` of all of the students without a gmail.com and phone number.
+
+```bash
+      name       |           email           | id  | cohort_id
+-----------------+---------------------------+-----+-----------
+ Javonte Ward    | jessie_howell@hotmail.com | 178 |
+ Jessika Jenkins | stephanie.koss@kevon.io   | 187 |
+ Jerrold Rohan   | wehner.twila@hotmail.com  | 189 |
+(3 rows)
+```
 # pSQL
 - `\c ...`: select a table
 - `\dt`: List tables
