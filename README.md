@@ -191,7 +191,20 @@ Gets the total amount of time that all students from a specific cohort have spen
  FEB12  |         373501
 (1 row)
 ```
+## [total_number_of_assignment_for_each_day_of_bootcamp.sql](queries/total_number_of_assignment_for_each_day_of_bootcamp.sql)
 
+Gets the total number of assignments for each day of bootcamp, ordered and grouped by the day.
+
+```bash
+ day | total_assignments
+-----+-------------------
+   1 |                11
+   2 |                 9
+   3 |                 9
+   4 |                 9
+   ...
+   (51 rows)
+```
 
 # pSQL
 - `\c ...`: select a table
