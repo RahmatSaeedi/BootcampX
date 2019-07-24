@@ -174,12 +174,21 @@ Gets the `name`, `email`, and `phone` number of all _graduates_ without a linked
 (6 rows)
 ```
 ## [total_time_spent_on_all_assignments.sql](queries/total_time_spent_on_all_assignments.sql)
-Gets the total amount of time that a student has spent on all assignments, such as _'Ibrahim Schimmel'_.
+Gets the total amount of time that a student has spent on all assignments, in this case _'Ibrahim Schimmel'_.
 
 ```bash
        name       | total_duration
 ------------------+----------------
  Ibrahim Schimmel |           6888
+(1 row)
+```
+## [cohorts_total_assignment_duration.sql](queries/cohorts_total_assignment_duration.sql)
+Gets the total amount of time that all students from a specific cohort have spent on all assignments, in this case _'FEB12'_.
+
+```bash
+ cohort | total_duration
+--------+----------------
+ FEB12  |         373501
 (1 row)
 ```
 
