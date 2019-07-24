@@ -205,6 +205,19 @@ Gets the total number of assignments for each day of bootcamp, ordered and group
    ...
    (51 rows)
 ```
+## [total_number_of_assignment_for_busy_days.sql](queries/total_number_of_assignment_for_busy_days.sql)
+Gets the total number of assignments for busy days with more than 9 assignments, ordered and grouped by the day.
+
+```bash
+ day | total_assignments
+-----+-------------------
+   1 |                11
+   9 |                12
+  22 |                10
+  23 |                10
+  24 |                10
+  29 |                10
+```
 
 # pSQL
 - `\c ...`: select a table
