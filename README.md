@@ -131,7 +131,7 @@ Gets the `name`, `id`, and `cohort_id` of all of the students that don't have an
  Bertha Johnson   | 172 |        11
  ...
 ```
-### [students_without_gmail_or_phone.sql](queries/students_without_gmail_or_phone.sql)
+## [students_without_gmail_or_phone.sql](queries/students_without_gmail_or_phone.sql)
 Gets the `name`, `email`, `id`, and `cohort_id` of all of the students without a gmail.com and phone number.
 
 ```bash
@@ -143,7 +143,7 @@ Gets the `name`, `email`, `id`, and `cohort_id` of all of the students without a
 (3 rows)
 ```
 
-### [currently_enrolled_students.sql](queries/currently_enrolled_students.sql)
+## [currently_enrolled_students.sql](queries/currently_enrolled_students.sql)
 Gets the `name`, `id`, and `cohort_id` of all of the students currently enrolled and orders them by `cohort_id`.
 
 ```bash
@@ -159,7 +159,7 @@ Gets the `name`, `id`, and `cohort_id` of all of the students currently enrolled
  ```
 
 
-### [students_without_github.sql](queries/students_without_github.sql)
+## [students_without_github.sql](queries/students_without_github.sql)
 Gets the `name`, `email`, and `phone` number of all _graduates_ without a linked Github account.
 
 ```bash
@@ -173,6 +173,16 @@ Gets the `name`, `email`, and `phone` number of all _graduates_ without a linked
  Hailie Kutch      | zora.corkery@goldner.net      | 249-763-9998
 (6 rows)
 ```
+## [total_time_spent_on_all_assignments.sql](queries/total_time_spent_on_all_assignments.sql)
+Gets the total amount of time that a student has spent on all assignments, such as _'Ibrahim Schimmel'_.
+
+```bash
+       name       | total_duration
+------------------+----------------
+ Ibrahim Schimmel |           6888
+(1 row)
+```
+
 
 # pSQL
 - `\c ...`: select a table
