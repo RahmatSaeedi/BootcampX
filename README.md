@@ -218,6 +218,18 @@ Gets the total number of assignments for busy days with more than 9 assignments,
   24 |                10
   29 |                10
 ```
+## [large_cohorts.sql](queries/large_cohorts.sql)
+Gets all the cohorts with 18 or more students, ordered by size
+```bash
+ name  | student_count
+-------+---------------
+ FEB12 |            18
+ APR09 |            19
+ JUN04 |            19
+ NOV19 |            22
+ SEP24 |            22
+(5 rows)
+```
 
 # pSQL
 - `\c ...`: select a table
