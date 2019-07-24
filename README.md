@@ -32,7 +32,9 @@ A set of database queries for a [Light House Labs](https://github.com/lighthouse
 
 * _`assignments`_
   ```bash
-
+   id | name | content | day | chapter | duration
+  ----+------+---------+-----+---------+----------
+  (0 rows)
   ```
   - `id`: A unique identifier
   - `name`: The name of the assignment
@@ -43,6 +45,9 @@ A set of database queries for a [Light House Labs](https://github.com/lighthouse
 
 * _`assignment_submissions`_
   ```bash
+   id | assignment_id | student_id | duration | submission_date
+  ----+---------------+------------+----------+-----------------
+  (0 rows)
   ```
   - `id`: A unique identifier
   - `assignment_id`: The id of the assignment
@@ -53,6 +58,13 @@ A set of database queries for a [Light House Labs](https://github.com/lighthouse
 * _`teachers`_
 * _`assistance_requests`_
 
+Temporary fake data
+```bash
+wget http://bit.ly/2xuYlJX -O seeds/students.sql
+wget http://bit.ly/2JsdAZB -O seeds/cohorts.sql
+wget http://bit.ly/2xsHpnr -O seeds/assignment_seeds.sql
+wget http://bit.ly/2KVhygR -O seeds/assignment_submissions_seeds.sql
+```
 
 ```sql
 CREATE DATABASE bootcampx;
@@ -61,10 +73,15 @@ CREATE DATABASE bootcampx;
 );
 
 \i migrations/students_cohorts.sql
+\i migrations/assignments_submissions.sql
+
 \i seeds/cohorts.sql
 \i seeds/students.sql
+\i seeds/assignment_seeds.sql
+\i seeds/assignment_submissions_seeds.sql
 
 ```
+
 # Queries
 ## [1_students_without_github.sql](queries/1_students_without_github.sql)
 Selects `id`, `name`, `email`, and `cohort_id` of those without a github account
