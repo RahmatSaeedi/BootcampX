@@ -74,13 +74,27 @@ Selects `id` and `name` of students in cohort `cohort_id = 1`, and orders them i
   ...
 ```
 ## [total_students_in_cohort.sql](queries/total_students_in_cohort.sql)
-Select the total number of students who were in the first 3 cohorts.
+Selects the total number of students who were in the first 3 cohorts.
 
 ```bash
  Total
 -------
     48
 (1 row)
+```
+
+## [students_without_contact_details.sql](queries/students_without_contact_details.sql)
+Gets the `name`, `id`, and `cohort_id` of all of the students that don't have an email or a phone number.
+```bash
+       name       | id  | cohort_id
+------------------+-----+-----------
+ Aurore Yundt     | 160 |        11
+ Cory Toy         | 161 |        11
+ Kurt Turcotte    | 163 |        11
+ Elda McClure     | 164 |        11
+ Luisa Sipes      | 168 |        11
+ Bertha Johnson   | 172 |        11
+ ...
 ```
 # pSQL
 - `\c ...`: select a table
