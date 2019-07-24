@@ -264,6 +264,19 @@ Gets the average assignment completion time of the currently enrolled students, 
  ...
 (42 rows)
 ```
+
+## [low_average_completion_time.sql](queries/low_average_completion_time.sql)
+Gets the students, from current cohort, who's average time it takes to complete an assignment is less than the average estimated time it takes to complete an assignment. Ordered from smallest to largest time.
+
+```bash
+    student     | average_assignment_duration | average_estimated_duration
+----------------+-----------------------------+----------------------------
+ Delores Gibson |         41.2971428571428571 |        53.7571428571428571
+ Cory Toy       |         41.8800000000000000 |        53.7571428571428571
+ Nola Jerde     |         42.2764227642276423 |        54.3089430894308943
+ Florida Turner |         42.5934959349593496 |        54.3089430894308943
+(4 rows)
+```
 # pSQL
 - `\c ...`: select a table
 - `\dt`: List tables
