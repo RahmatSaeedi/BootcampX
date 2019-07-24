@@ -230,7 +230,25 @@ Gets all the cohorts with 18 or more students, ordered by size
  SEP24 |            22
 (5 rows)
 ```
+## [total_assignment_submissions_per_cohorts.sql](queries/total_assignment_submissions_per_cohorts.sql)
+Gets the total number of assignment submissions for each cohort, ordered from greatest to least submissions.
 
+```bash
+ cohort | total_submissions
+--------+-------------------
+ SEP24  |              9328
+ JUN04  |              8030
+ APR09  |              7935
+ NOV19  |              7231
+ JUL02  |              5868
+ MAY07  |              5843
+ FEB12  |              5440
+ JUL30  |              4664
+ OCT22  |              4626
+ AUG27  |              4589
+ MAR12  |              3002
+(11 rows)
+```
 # pSQL
 - `\c ...`: select a table
 - `\dt`: List tables
