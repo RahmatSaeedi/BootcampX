@@ -251,7 +251,7 @@ Gets the total number of assignment submissions for each cohort, ordered from gr
 ```
 
 ## [average_completion_time_of_current_cohort.sql](queries/average_completion_time_of_current_cohort.sql)
-Gets the currently enrolled students' average assignment completion time, ordered the results from greatest duration to least.
+Gets the average assignment completion time of the currently enrolled students, ordered the results from greatest duration to least.
 
 ```bash
        student       | average_assignment_duration 
