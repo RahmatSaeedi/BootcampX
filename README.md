@@ -107,6 +107,24 @@ Gets the `name`, `email`, `id`, and `cohort_id` of all of the students without a
  Jerrold Rohan   | wehner.twila@hotmail.com  | 189 |
 (3 rows)
 ```
+
+### [currently_enrolled_students.sql](queries/currently_enrolled_students.sql)
+Gets the `name`, `id`, and `cohort_id` of all of the students currently enrolled and orders them by `cohort_id`.
+
+```bash
+        name         | id  | cohort_id
+---------------------+-----+-----------
+ Deon Hahn           | 151 |        11
+ Sean Bartell        | 152 |        11
+ Sarai Flatley       | 153 |        11
+ Billie Mitchell     | 154 |        11
+ Vance Kihn          | 155 |        11
+ ...
+ (42 rows)
+ ```
+
+
+
 # pSQL
 - `\c ...`: select a table
 - `\dt`: List tables
