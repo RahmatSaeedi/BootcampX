@@ -249,6 +249,21 @@ Gets the total number of assignment submissions for each cohort, ordered from gr
  MAR12  |              3002
 (11 rows)
 ```
+
+## [average_completion_time_of_current_cohort.sql](queries/average_completion_time_of_current_cohort.sql)
+Gets the currently enrolled students' average assignment completion time, ordered the results from greatest duration to least.
+
+```bash
+       student       | average_assignment_duration 
+---------------------+-----------------------------
+ Hettie Hettinger    |        140.0533333333333333
+ Santino Oberbrunner |        139.2991803278688525
+ Vance Kihn          |        100.0730994152046784
+ Jerrold Rohan       |         99.3553719008264463
+ Vivienne Larson     |         96.1818181818181818
+ ...
+(42 rows)
+```
 # pSQL
 - `\c ...`: select a table
 - `\dt`: List tables
