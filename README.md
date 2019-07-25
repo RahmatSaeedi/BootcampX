@@ -418,14 +418,27 @@ Calculates the average-cohort total duration of assistance requests.
 Lists each assignment with the total number of assistance requests with it.
 
 ```bash
- id  |                name                | day | chapter | total_requests
------+------------------------------------+-----+---------+----------------
- 424 | Ullam cumque                       |  51 |      12 |            143
- 423 | Culpa esse sint                    |  51 |      11 |            113
-  45 | Quia quasi                         |   5 |       7 |             86
-  50 | A rerum                            |   6 |       5 |             83
- 141 | Illo error dolor                   |  17 |       9 |             ...
+ id  |         name         | day | chapter | total_requests
+-----+----------------------+-----+---------+----------------
+ 424 | Ullam cumque         |  51 |      12 |            143
+ 423 | Culpa esse sint      |  51 |      11 |            113
+  45 | Quia quasi           |   5 |       7 |             86
+  50 | A rerum              |   6 |       5 |             83
+ 141 | Illo error dolor     |  17 |       9 |             82
+ ...
  (424 rows)
+```
+## [total_assignments_and_duration.sql](queries/total_assignments_and_duration.sql)
+Gets each day with the total number of assignments and the total duration of the assignments, and ordered by day.
+
+```bash
+ day | number_of_assignments | duration
+-----+-----------------------+----------
+   1 |                    11 |      590
+   2 |                     9 |      585
+   3 |                     9 |      425
+...
+(51 rows)
 ```
 
 # pSQL
