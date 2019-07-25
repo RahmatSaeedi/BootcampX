@@ -4,5 +4,5 @@ SELECT
   sum(duration) AS duration
 FROM assignments
 GROUP BY day
-ORDER BY day
+ORDER BY day;
 

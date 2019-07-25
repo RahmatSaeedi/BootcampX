@@ -440,6 +440,11 @@ Gets each day with the total number of assignments and the total duration of the
 ...
 (51 rows)
 ```
+## [name_of_teachers_that_assisted.sql](queries/name_of_teachers_that_assisted.sql)
+Gets the name of all teachers that performed an assistance request during a cohort, and ordered by the instructor's name; in this case _'JUL02'_ cohort.
+
+```bash
+```
 
 # pSQL
 - `\c ...`: select a table
