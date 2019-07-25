@@ -307,6 +307,15 @@ Gets the total number of assistance_requests for a given teacher, in this case _
  Waylon Boehm |              4227
 (1 row)
 ```
+
+## [total_assistance_requests_for.sql](queries/total_assistance_requests_for.sql)
+Gets the total number of assistance_requests for a given student, in this case _'Elliot Dickinson'_.
+```bash
+       name       | total_assistances
+------------------+-------------------
+ Elliot Dickinson |               138
+(1 row)
+```
 # pSQL
 - `\c ...`: select a table
 - `\dt`: List tables
