@@ -298,6 +298,15 @@ Gets the students, from current cohort, who's average time it takes to complete 
  Florida Turner |         42.5934959349593496 |        54.3089430894308943
 (4 rows)
 ```
+## [total_teacher_assistance_requests_for.sql](queries/total_teacher_assistance_requests_for.sql)
+Gets the total number of assistance_requests for a given teacher, in this case _'Waylon Boehm'_.
+
+```bash
+     name     | total_assistances
+--------------+-------------------
+ Waylon Boehm |              4227
+(1 row)
+```
 # pSQL
 - `\c ...`: select a table
 - `\dt`: List tables
