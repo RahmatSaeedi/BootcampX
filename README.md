@@ -385,6 +385,27 @@ Calculates the average time it takes to start an assistance request.
  00:08:46.258793
 (1 row)
 ```
+
+## [total_cohort_assistance_duration.sql](queries/total_cohort_assistance_duration.sql)
+Gets the total duration of all assistance requests for each cohort, ordered by total_duration.
+
+```bash
+ cohort | total_duration
+--------+-----------------
+ NOV19  | 00:14:34.16273
+ SEP24  | 00:13:23.071576
+ JUL30  | 00:13:23.956547
+ OCT22  | 00:15:22.121838
+ JUL02  | 00:13:59.152542
+ AUG27  | 00:14:15.572792
+ APR09  | 00:15:39.425113
+ JUN04  | 00:13:45.974562
+ MAR12  | 00:15:44.556041
+ FEB12  | 00:13:42.66022
+ MAY07  | 00:13:58.745754
+(11 rows)
+```
+
 # pSQL
 - `\c ...`: select a table
 - `\dt`: List tables
