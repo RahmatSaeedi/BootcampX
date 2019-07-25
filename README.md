@@ -348,6 +348,24 @@ Gets the average time of an assistance request.
 ```
 
 ## [average_cohort_assistance_time.sql](queries/average_cohort_assistance_time.sql)
+Gets the average duration of assistance requests for each cohort, Ordered by duration.
+
+```bash
+ name  | average_assistance_request_duration
+-------+-------------------------------------
+ SEP24 | 00:13:23.071576
+ JUL30 | 00:13:23.956547
+ FEB12 | 00:13:42.66022
+ JUN04 | 00:13:45.974562
+ MAY07 | 00:13:58.745754
+ JUL02 | 00:13:59.152542
+ AUG27 | 00:14:15.572792
+ NOV19 | 00:14:34.16273
+ OCT22 | 00:15:22.121838
+ APR09 | 00:15:39.425113
+ MAR12 | 00:15:44.556041
+(11 rows)
+```
 
 # pSQL
 - `\c ...`: select a table
