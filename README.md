@@ -83,6 +83,8 @@ wget http://bit.ly/2xuYlJX -O seeds/students.sql
 wget http://bit.ly/2JsdAZB -O seeds/cohorts.sql
 wget http://bit.ly/2xsHpnr -O seeds/assignment_seeds.sql
 wget http://bit.ly/2KVhygR -O seeds/assignment_submissions_seeds.sql
+wget http://bit.ly/2XPT12w -O teacher_seeds.sql
+wget http://bit.ly/30bIUma -O assistance_requests_seeds.sql
 ```
 
 ```sql
