@@ -414,6 +414,19 @@ Calculates the average-cohort total duration of assistance requests.
  555:22:25.909091
 (1 row)
 ```
+## [most_confusing_assignments.sql](queries/most_confusing_assignments.sql)
+Lists each assignment with the total number of assistance requests with it.
+
+```bash
+ id  |                name                | day | chapter | total_requests
+-----+------------------------------------+-----+---------+----------------
+ 424 | Ullam cumque                       |  51 |      12 |            143
+ 423 | Culpa esse sint                    |  51 |      11 |            113
+  45 | Quia quasi                         |   5 |       7 |             86
+  50 | A rerum                            |   6 |       5 |             83
+ 141 | Illo error dolor                   |  17 |       9 |             ...
+ (424 rows)
+```
 
 # pSQL
 - `\c ...`: select a table
