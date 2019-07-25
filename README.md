@@ -316,6 +316,27 @@ Gets the total number of assistance_requests for a given student, in this case _
  Elliot Dickinson |               138
 (1 row)
 ```
+
+## [assistance_requests_data.sql](queries/assistance_requests_data.sql)
+Gets important data about each assistance request for a named-assignment, with the following columns:
+  - teacher's name
+  - student's name
+  - assignment's name
+  - _duration_ for each assistance request
+    - Calculated as the difference between `completed_at` and `started_at`.
+Ordered by _duration_
+```bash
+      teacher       |         student          |             assignment             | duration
+--------------------+--------------------------+------------------------------------+----------
+ Helmer Rodriguez   | Maximillian Pfannerstill | Expedita officia                   | 00:02:45
+ Georgiana Fahey    | Gene Carter              | Ut fuga                            | 00:02:45
+ Roberto Towne      | Vivien Mosciski          | Ea totam iste                      | 00:02:45
+ Cheyanne Powlowski | Vivien Mosciski          | Eum eaque                          | 00:02:45
+ Rosalyn Raynor     | Gene Carter              | Porro placeat velit                | 00:03:00
+ Roberto Towne      | Maximillia Willms        | Quibusdam est                      | 00:03:00
+ ...
+ (20214 rows)
+```
 # pSQL
 - `\c ...`: select a table
 - `\dt`: List tables
