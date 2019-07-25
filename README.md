@@ -387,7 +387,7 @@ Calculates the average time it takes to start an assistance request.
 ```
 
 ## [total_cohort_assistance_duration.sql](queries/total_cohort_assistance_duration.sql)
-Gets the total duration of all assistance requests for each cohort, ordered by total_duration.
+Gets the total duration of all assistance requests for each cohort individually, and orders them by duration.
 
 ```bash
  cohort | total_duration
@@ -405,8 +405,8 @@ Gets the total duration of all assistance requests for each cohort, ordered by t
  APR09  | 862:26:40
 (11 rows)
 ```
-## [average_total_assistance_duration.sql](queries/average_total_assistance_duration.sql)
-Calculates the average total duration of assistance requests for each cohort.
+## [average_cohort_total_assistance_duration.sql](queries/average_cohort_total_assistance_duration.sql)
+Calculates the average-cohort total duration of assistance requests.
 
 ```bash
  average_total_duration 
