@@ -2,12 +2,10 @@
 A set of database queries for a [Light House Labs](https://github.com/lighthouse-labs) application to help manage data about students and mentors.
 
 # Creating database
-* [_`students`_](https://gist.githubusercontent.com/meech-ward/6074f24ced36917ce608c69914ece777/raw/69a97d29d5d227914fdf11c71e522923efe0597b/students_seeds.sql)
+* [_`students`_](migrations/students_cohorts.sql)
   ```bash
-    > SELECT * FROM students;
      id | name | email | phone | github | start_date | end_date | cohort_id
     ----+------+-------+-------+--------+------------+----------+-----------
-    (0 rows)
   ```
   - `id`: A unique identifier
   - `name`: The full name of the student
@@ -18,23 +16,20 @@ A set of database queries for a [Light House Labs](https://github.com/lighthouse
   - `end_date`: The students' end date of the Bootcamp
   - `cohort_id`: The id of the cohort that the student is enrolled in
 
-* [_`cohorts`_](https://gist.githubusercontent.com/meech-ward/6074f24ced36917ce608c69914ece777/raw/69a97d29d5d227914fdf11c71e522923efe0597b/cohorts_seeds.sql)
+* [_`cohorts`_](migrations/students_cohorts.sql)
   ```bash
-  > SELECT * FROM cohorts;
    id | name | start_date | end_date
   ----+------+------------+----------
-  (0 rows)
   ```
   - `id`: A unique identifier
   - `name`: The name of the cohort
   - `start_date`: The cohorts' start date
   - `end_date`: The cohorts' end date
 
-* _`assignments`_
+* [_`assignments`_](migrations/assignments_submissions.sql)
   ```bash
    id | name | content | day | chapter | duration
   ----+------+---------+-----+---------+----------
-  (0 rows)
   ```
   - `id`: A unique identifier
   - `name`: The name of the assignment
@@ -43,11 +38,10 @@ A set of database queries for a [Light House Labs](https://github.com/lighthouse
   - `chapter`: The order that the assignment will appear in the day.
   - `duration`: The average time it takes a student to finish
 
-* _`assignment_submissions`_
+* [_`assignment_submissions`_](migrations/assignments_submissions.sql)
   ```bash
    id | assignment_id | student_id | duration | submission_date
   ----+---------------+------------+----------+-----------------
-  (0 rows)
   ```
   - `id`: A unique identifier
   - `assignment_id`: The id of the assignment
@@ -55,8 +49,33 @@ A set of database queries for a [Light House Labs](https://github.com/lighthouse
   - `duration`: The time it took the student to complete the assignment
   - `submission_date`: The date is was submitted
 
-* _`teachers`_
-* _`assistance_requests`_
+* [_`teachers`_](migrations/teachers_assistance_requests.sql)
+  ```bash
+   id | name | is_active | start_date | end_date
+  ----+------+-----------+------------+----------
+  ```
+  - `id`: A unique identifier
+  - `name`: The name of the teacher
+  - `start_date`: The date that the teacher started working.
+  - `end_date`: The date that the teacher stopped working.
+  - `is_active`: If the teacher is actively teaching right now.
+
+* [_`assistance_requests`_](migrations/teachers_assistance_requests.sql)
+  ```bash
+   id | student_id | teacher_id | assignment_id | created_at | started_at | completed_at | student_feedback | teacher_feedback
+  ----+------------+------------+---------------+------------+------------+--------------+------------------+------------------
+  ```
+  - `id`: A unique identifier
+  - `assignment_id`: The id of the assignment the request was made from
+  - `student_id`: The id of the student making the request
+  - `teacher_id`: The id of the teacher responding to the request
+  - `created_at`: The timestamp when the request was made
+  - `started_at`: The timestamp when the assistance started
+  - `completed_at`: The timestamp when the assistance was completed
+  - `student_feedback`: Feedback about the student given by the teacher
+  - `teacher_feedback`: Feedback about the teacher given by the student
+![ERD](docs/ERD.png)
+
 
 Temporary fake data
 ```bash
