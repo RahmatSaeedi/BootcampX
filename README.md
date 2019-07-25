@@ -337,6 +337,18 @@ Ordered by _duration_
  ...
  (20214 rows)
 ```
+## [average_assistance_request_duration.sql](queries/average_assistance_request_duration.sql)
+Gets the average time of an assistance request.
+
+```bash
+ average_assistance_request_duration
+-------------------------------------
+ 00:14:21.556903
+(1 row)
+```
+
+## [average_cohort_assistance_time.sql](queries/average_cohort_assistance_time.sql)
+
 # pSQL
 - `\c ...`: select a table
 - `\dt`: List tables
