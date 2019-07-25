@@ -375,6 +375,16 @@ Gets the cohort with the longest average duration of assistance requests.
  MAR12 | 00:15:44.556041
 (1 row)
 ```
+
+## [average_assistance_request_wait_time.sql](queries/average_assistance_request_wait_time.sql)
+Calculates the average time it takes to start an assistance request.
+
+```bash
+ average_wait_time
+-------------------
+ 00:08:46.258793
+(1 row)
+```
 # pSQL
 - `\c ...`: select a table
 - `\dt`: List tables
