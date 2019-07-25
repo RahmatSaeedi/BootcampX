@@ -366,7 +366,15 @@ Gets the average duration of assistance requests for each cohort, Ordered by dur
  MAR12 | 00:15:44.556041
 (11 rows)
 ```
+## [cohort_with_longest_average_assistance.sql](queries/cohort_with_longest_average_assistance.sql)
+Gets the cohort with the longest average duration of assistance requests.
 
+```bash
+ name  | average_assistance_time
+-------+-------------------------
+ MAR12 | 00:15:44.556041
+(1 row)
+```
 # pSQL
 - `\c ...`: select a table
 - `\dt`: List tables
