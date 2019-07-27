@@ -460,7 +460,7 @@ Gets the name of all teachers that performed an assistance request during a give
  Waylon Boehm       | JUL02
 (8 rows)
 ```
-[teachers_and_number_of_assistances.sql](queries/teachers_and_number_of_assistances.sql)
+## [teachers_and_number_of_assistances.sql](queries/teachers_and_number_of_assistances.sql)
 Gets the name of all teachers that performed an assistance request during a given cohort, the number of assistances during that cohort, and orderes them by the instructor's name; in this case _'JUL02'_ cohort.
 
 ```bash
