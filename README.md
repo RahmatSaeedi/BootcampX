@@ -1,7 +1,11 @@
 # BootcampX
 A set of database queries for a [Light House Labs](https://github.com/lighthouse-labs) application to help manage data about students and mentors.
 
-# Creating database
+# Databases
+## ERD Diagram
+![ERD](docs/ERD.png)
+
+## ERD Explanations 
 * [_`students`_](migrations/students_cohorts.sql)
   ```bash
      id | name | email | phone | github | start_date | end_date | cohort_id
@@ -74,19 +78,8 @@ A set of database queries for a [Light House Labs](https://github.com/lighthouse
   - `completed_at`: The timestamp when the assistance was completed
   - `student_feedback`: Feedback about the student given by the teacher
   - `teacher_feedback`: Feedback about the teacher given by the student
-![ERD](docs/ERD.png)
 
-
-Temporary fake data
-```bash
-wget http://bit.ly/2xuYlJX -O seeds/students.sql
-wget http://bit.ly/2JsdAZB -O seeds/cohorts.sql
-wget http://bit.ly/2xsHpnr -O seeds/assignment_seeds.sql
-wget http://bit.ly/2KVhygR -O seeds/assignment_submissions_seeds.sql
-wget http://bit.ly/2XPT12w -O teacher_seeds.sql
-wget http://bit.ly/30bIUma -O assistance_requests_seeds.sql
-```
-
+## Migration & Creating Tables
 ```sql
 CREATE DATABASE bootcampx;
 \c bootcampx;
@@ -102,6 +95,17 @@ CREATE DATABASE bootcampx;
 \i seeds/assignment_submissions_seeds.sql
 
 ```
+## Temporary Fake Data
+Temporary fake data
+```bash
+wget http://bit.ly/2xuYlJX -O seeds/students.sql
+wget http://bit.ly/2JsdAZB -O seeds/cohorts.sql
+wget http://bit.ly/2xsHpnr -O seeds/assignment_seeds.sql
+wget http://bit.ly/2KVhygR -O seeds/assignment_submissions_seeds.sql
+wget http://bit.ly/2XPT12w -O teacher_seeds.sql
+wget http://bit.ly/30bIUma -O assistance_requests_seeds.sql
+```
+
 
 # Queries
 ## [1_students_without_github.sql](queries/1_students_without_github.sql)
@@ -478,10 +482,9 @@ Gets the name of all teachers that performed an assistance request during a give
 
 
 
-# pSQL
+# Useful Commands pSQL
 - `\c ...`: select a table
 - `\dt`: List tables
 - `\! ...`: executes an external shell command 
 - `SELECT * FROM pg_catalog.pg_tables;`: list system tables
-# SQL
 - `CREATE TABLE ... (...);`
