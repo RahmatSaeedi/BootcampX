@@ -1,6 +1,17 @@
 # BootcampX
 A set of database queries for a [Light House Labs](https://github.com/lighthouse-labs) application to help manage data about students and mentors.
 
+# App.js
+A barebone `node-postgres` commandline interface that intracts with the database.
+Currently fetches one of two possible queries.
+```bash
+HELP
+   > node app {queryNumber} {cohortName} {maxNumberOfRows}
+     Try: > node app 1 FEB 5
+      or: > node app 2 FEB 5
+```
+
+
 # Databases
 ## ERD Diagram
 ![ERD](docs/ERD.png)
