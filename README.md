@@ -14,8 +14,7 @@ HELP
 
 # Databases
 ## ERD Diagram
-![ERD](docs/ERD.png =250)
-<img src="docs/ERD.png" data-canonical-src="https://raw.githubusercontent.com/RahmatSaeedi/BootcampX/master/docs/ERD.png" width="200"/>
+<img src="docs/ERD.png" data-canonical-src="https://raw.githubusercontent.com/RahmatSaeedi/BootcampX/master/docs/ERD.png" width="500"/>
 
 ## ERD Explanations 
 * [_`students`_](migrations/students_cohorts.sql)
