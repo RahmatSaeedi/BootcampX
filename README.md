@@ -14,7 +14,7 @@ HELP
 
 # Databases
 ## ERD Diagram
-![ERD](docs/ERD.png =250x)
+![ERD](docs/ERD.png =250)
 
 ## ERD Explanations 
 * [_`students`_](migrations/students_cohorts.sql)
