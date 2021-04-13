@@ -14,7 +14,7 @@ HELP
 
 # Databases
 ## ERD Diagram
-![ERD](docs/ERD.png)
+![ERD](docs/ERD.png =250x)
 
 ## ERD Explanations 
 * [_`students`_](migrations/students_cohorts.sql)
@@ -94,8 +94,6 @@ HELP
 ```sql
 CREATE DATABASE bootcampx;
 \c bootcampx;
-
-);
 
 \i migrations/students_cohorts.sql
 \i migrations/assignments_submissions.sql
